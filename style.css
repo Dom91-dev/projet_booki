@@ -1,0 +1,628 @@
+body {
+  font-family: "raleway", sans-serif;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 100% ;
+  padding-left: 50px ;
+  padding-right: 50px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+  margin-top: 30px;
+
+}
+
+nav ul {
+  list-style: none;
+  margin-top: -25px;
+  display: flex;
+  gap: 60px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  border-top: solid;
+  border-top: #0065fc 3px;
+}
+
+nav a:hover {
+  color: #0065fc;
+  border-top: solid #0065fc;
+}
+
+h1 {
+  font-weight: 700;
+  margin-top: 70px;
+}
+
+p {
+  margin-top: -15px;
+
+}
+.search-form{
+  display: flex;
+  align-items: center;
+  height: 50px;
+  width: fit-content;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+.search-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: #f2F2F2;
+  font-size: 18px;
+}
+.search-input{
+  height: 50px;
+  width: 240px;
+  border: 1px solid #f2f2f2;
+  padding: 0 16px;
+  font-size: 16px;
+  font-weight: 700;
+  outline: none;
+  box-sizing: border-box;
+}
+.search-input::placeholder{
+  color: #000;
+  opacity:1
+}
+.search-button{
+  height: 50px;
+  border: none;
+  padding: 0 18px;
+  background: #0065FC;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+h2 {
+  font-weight: 400;
+  margin-top: 40px;
+}
+
+.Filtres {
+  display: flex;
+  gap: 15px;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 850px;
+  margin-top: 15px;
+}
+
+.Filtres button {
+  flex: 1;
+  background-color: white;
+  border: 2px solid#d9d9d9;
+  border-radius: 30px;
+  padding: 9px 9px 9px 9px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.Filtres button:hover {
+  background-color: #deebff;
+  border-color: #0065fc;
+  color: #0065fc;
+}
+
+.Filtres i {
+  color: #0065fc;
+  margin-right: 5px;
+
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+  margin-bottom: 24px;
+  
+}
+
+.cercle {
+  display:inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: white;
+  border:1px solid #d9d9d9;
+}
+
+.info i {
+  color: #0065FC;
+ font-size: 12px;
+}
+.info p{
+  margin:0
+}
+
+h3 {
+  font-weight: 400;
+  font-weight: 700;
+  margin-top: 50px;
+}
+
+h5 {
+  font-weight: 800;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+.hebergements-et-populaires {
+  display: flex;
+  gap: 40px;
+
+
+}
+
+#hebergements {
+  flex: 2;
+  background-color: rgb(0, 0, 0, 0.05);
+  border-radius: 20px;
+  padding: 1%;
+  max-width: 1250px;
+  width: 70%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.carte-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding:0 16px;
+  gap: 25px;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.carte {
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  width: calc(33.333% - 25px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 1);
+  transition: transform 0.2s;
+}
+
+.carte:hover {
+  transform: scale(1.03);
+}
+
+.carte img {
+  display: block;
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+}
+
+.carte-contenus {
+  padding: 10px 12px;
+}
+
+.carte-contenus h4 {
+  margin: 5px 0;
+  font-size: 13px;
+}
+
+.carte-contenus p {
+  margin: 3px 0;
+  font-size: 13px;
+}
+
+.étoiles {
+  color: #0065fc;
+}
+
+.populaires {
+  flex: 1;
+  width: 32%;
+  background-color: rgb(0, 0, 0, 0.05);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  
+}
+
+.afficher-plus {
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.afficher-plus:hover {
+  text-decoration: underline;
+}
+
+.carte-container2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.carte2 {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.carte2:hover {
+  transform: scale(1.03);
+}
+
+.carte2 img {
+  width: 40%;
+  height: 130px;
+  object-fit: cover;
+}
+
+
+.Activites {
+  margin-top:40px;
+ 
+}
+
+ h3{
+  margin-left: 40px;
+}
+
+.carte-container3 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.carte3 {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+  height: 420px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow:0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.carte3 :hover {
+  transform: scale(1.03);
+}
+
+.carte3 img {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+}
+.carte3 h4{
+  margin:0;
+  padding:16px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+
+
+
+footer {
+  background-color: #f2f2f2;
+  margin-top: 40px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.footer {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  padding: 45px;
+  gap: 160px;
+  align-items: flex-start;
+  margin-top: 60px;
+}
+
+.footer-column h5 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+}
+
+.footer-column a {
+  display: block;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+}
+
+/*
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .main-container {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  body {
+    font-size: 16px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+  }
+  .logo img {
+    width: 100px;
+  }
+
+  nav ul {
+    display: flex;
+    gap: 40px;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+  }
+  nav li {
+    flex: 0;
+    border-radius: none;
+  }
+  nav a {
+    display: block;
+    padding-bottom: 10px;
+  }
+  nav a:hover {
+    border-bottom: 2px solid #0065fc;
+    color: #0065fc;
+  }
+  h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .bare-de-recherche {
+    margin-top: 20px;
+    max-width: 600px;
+  }
+  .bare-de-recherche form {
+    display: flex;
+    width: 100%;
+  }
+  .bare-de-recherche input {
+    flex: 0;
+    padding: 10px 20px;
+    white-space: nowrap;
+  }
+  .bare-de-recherche button {
+    flex: 0;
+    padding: 10px 20px;
+    white-space: nowrap;
+  }
+  .filters {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 30px 0;
+  }
+  .filters-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 100%;
+  }
+  .filters-buttons button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 999px;
+    flex: 0 0 calc(50%-15px);
+  }
+  .hebergements .carte-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .carte {
+    width: 100%;
+  }
+  .carte img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+  }
+
+  .carte-container2 {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+  }
+
+  .carte2 {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+  }
+  .carte2 img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .activite {
+    margin-top: 40px;
+  }
+  .carte-container3 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  .carte3 img,
+  .carte-activite img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px 0 20px;
+  }
+  footer div {
+    flex: 1;
+  }
+}
+
+@media screen and(max-width :767px) {
+  body {
+    padding: 0 10px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  .logo img {
+    width: 100px;
+  }
+  nav {
+    width: 100%;
+  }
+  nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+  }
+  nav li {
+    flex: 1;
+    text-align: center;
+    border-bottom: 2px solid #f2f2f2;
+    padding: bottom 10px;
+  }
+  nav a {
+    display: block;
+    padding: 10px 0;
+    border-top: none;
+  }
+  nav a :hover {
+    border-bottom: 2px solid #0065fc;
+    color: #0065fc;
+  }
+  .bare-de-recherche {
+    width: 100%;
+    max-width: 100%;
+  }
+  .bare-de-recherche input {
+    font-size: 16px;
+  }
+  .bare-de-recherche button {
+    flex: 0;
+    padding: 10px 15px;
+  }
+  .filters {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+  }
+  .filters-buttons {
+    flex: none;
+    width: 45%;
+  }
+  .hebergements-et-populaires {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .hebergments .populaires {
+    width: 100%;
+    border-radius: 0;
+    padding: 20px;
+  }
+  .carte {
+    width: 100%;
+  }
+  .carte img {
+    width: 160px;
+  }
+  .carte-container2 {
+    flex-direction: column;
+  }
+  .carte2 {
+    flex-direction: row;
+    height: 140px;
+  }
+  .carte2 img {
+    width: 40%;
+    height: 100%;
+  }
+  .Activités {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .carte-container3 {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .carte footer {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 20px;
+  }
+}
+
+*/
+
+
+/*
+
+1 - Créer un dossier Booki 
+    - index.html
+    - style.css
+    - dossier Images
+
+2 - Repository pour le projet Booki (public)    
+
+3 - Créer un commit pour pusher tout ton projet
+
+4 - Activer Github Pages. .../settings/pages
+
+5 - Maintenant que ta structure est correct, tu peut revoir les styles des différents élements
+
+Pour rappel : pas de caractéres spéciaux dans les classes, id etc .. et on utilise le camelCase 
+*/
