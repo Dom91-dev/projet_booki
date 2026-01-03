@@ -238,7 +238,7 @@ h5 {
 }
 
 .carte-contenus p {
-  margin: 3px 0;
+  margin: 3px 0 ;
   font-size: 13px;
 }
 
@@ -704,7 +704,7 @@ footer {
     padding: 12px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     box-sizing: border-box;
     overflow: hidden;
   }
@@ -714,7 +714,10 @@ footer {
   }
   .populaires .carte-contenus p{
     font-size: 13px;
-    margin: 4px 0 0;
+    margin: 0;
+  }
+  .populaires .étoiles{
+    margin-top:auto;
   }
   #hebergements{
     background: white;
