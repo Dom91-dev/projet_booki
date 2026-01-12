@@ -535,16 +535,32 @@ footer {
   font-size: 13px;
   font-weight: 700;
 }
-  
 }
+
 @media  screen and (max-width:767px) {
-  html body {
-   width: 100%;
-  }
+   
   body{
-    display: block;
+    width: 100%;
     font-family: "raleway",sans-serif;
     margin: 0;
+    padding: 0;
+  }
+
+  .main-container{
+    max-width: 1440px;
+    margin: 0 auto; 
+    padding: 0 50px;
+    box-sizing: border-box;
+  }
+  
+  h1,h1+p,
+  .search-form,
+  .Filtres,
+  .info,
+  #hebergements,
+  #activites{
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
    header {
@@ -596,7 +612,6 @@ footer {
     font-weight: 600;
     line-height: 1.25;
     margin-top: 20px;
-    margin-bottom: 18px;
   }
 
   .search-form{
@@ -615,6 +630,8 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px ;
   }
   .search-input{
     flex: 1;
@@ -690,13 +707,15 @@ footer {
     gap: 20px;
     width: 100%;
     margin: 0;
+    padding: 0;
     margin-top: 20px;
     
   }
 
   .hebergements-et-populaires .populaires{
     order: 1;
-    width: 100%;
+    width:  100%
+    
     
   }
   .hebergements-et-populaires #hebergements{
@@ -704,10 +723,12 @@ footer {
     width: 100%;
   }
   .populaires{
-    background: #f2F2F2;
+    background-color: #f2F2F2;
+    box-shadow: none;
+    border-radius: none;
     margin: 0;
-    border-radius: 0;
-    box-sizing: border-box;
+    
+    
   }
   .populaires .carte-container2{
     display: flex;
@@ -720,8 +741,6 @@ footer {
     flex-direction: row;
     width: 100%;
     height: 140px;
-    border-radius: 15px;
-    overflow: hidden;
     background: white;
   } 
   .populaires .carte img,
@@ -752,11 +771,12 @@ footer {
     margin-top:auto;
   }
   #hebergements{
-    background: white;
-    padding: 20px 0;
+    background:none;
+    box-shadow: none;
+    padding: 20px 16px;
     border-radius: 0px;
     width: 100%;
-    box-sizing: border-box;
+    border-radius: 0;
   }
   #hebergements h5{
     margin: 0 0 15px 0;
@@ -795,27 +815,34 @@ footer {
     display: inline-block;
     margin-top: 10px;
   }
+  .afficher-plus{
+    margin-top: 0px;
+    padding: 0;
+    font-weight: 600;
+  }
 
   #activites{
-    padding: 20px 0;
     width: 100%;
   }
-  #activites .carte-container3{
+   .carte-container3{
     display: flex;
     flex-direction: column;
-    gap:15px;
+    align-items: center;
+    margin-left: 0;
+    margin-right: 0;
+    gap:12px;
   }
-  #activites .carte3{
+  .carte3{
     width: 100%;
+    max-width: 350px;
     height: auto;
-    min-height: unset;
     border-radius: 15px;
     overflow: hidden;
     background: white;
   }
   #activites .carte3 img{
     width: 100%;
-    height: 140px;
+    height: 150px;
     object-fit: cover;
     display: block;
   }
@@ -825,10 +852,10 @@ footer {
     font-size: 16px;
   }
 
-
   .footer{
     background: #f2f2f2;
-    padding: 30px 20px;
+    width: 100%;
+    padding: 20px 0;
     display: flex;
     flex-direction: column;
     gap: 25;
@@ -852,30 +879,3 @@ footer {
   }
 
 }
-
-
-  
-
-
-
-
-
-
-
-
-/*
-
-1 - Créer un dossier Booki 
-    - index.html
-    - style.css
-    - dossier Images
-
-2 - Repository pour le projet Booki (public)    
-
-3 - Créer un commit pour pusher tout ton projet
-
-4 - Activer Github Pages. .../settings/pages
-
-5 - Maintenant que ta structure est correct, tu peut revoir les styles des différents élements
-
-Pour rappel : pas de caractéres spéciaux dans les classes, id etc .. et on utilise le camelCase 
